@@ -1,9 +1,11 @@
 Package: Cointoss
-Title: What the Package Does (One Line, Title Case)
+Title: Get a summary and plot of random cointoss'
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: c(
+  person("Andreas", "Pedersen", , "anpedee21@student.aau.dk", role = "aut"),
+  person("Elissa", "Yammin", email = "eyammi21@student.aau.dk", role = "aut")
+)
+Description: Tools for simulating and analyzing coin toss experiments and calculating probabilities.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
