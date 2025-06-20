@@ -1,0 +1,39 @@
+---
+title: "Getting Started with Cointoss"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting Started with Cointoss}
+  %\VignetteEngine{rmarkdown::render}
+  %\VignetteEncoding{UTF-8}
+---
+
+Cointoss is a small R package that simulates fair coin tosses and analyzes the outcomes.
+
+It was developed by Andreas Pedersen and Elissa Yammin as part of a university assignment to demonstrate an R package with S3 methods, plotting, testing, and documentation.
+
+Use toss_coin(n) to simulate n fair coin tosses.
+
+```{}
+my_toss <- toss_coin(100)
+```
+The print() method shows a short summary:
+```{}
+print(my_toss)
+```
+The summary() method gives you the proportion of Heads and Tails:
+```{}
+summary(my_toss)
+```
+Bar Plot of Heads vs. Tails
+```{}
+plot(my_toss)  # default is bar plot
+```
+See how your tosses evolve over time:
+```{}
+plot(my_toss, type = "path")
+```
+This plot increases by +1 for Heads, and decreases by -1 for Tails.
+
+```{r setup}
+library(Cointoss)
+```
